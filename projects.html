@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tango Byte - Projects</title>
+<!-- Bootstrap, Fonts, FontAwesome, CSS same as index.html -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- Header with Logo and Site Title -->
+<header class="bg-white shadow-sm py-3">
+    <div class="container d-flex align-items-center">
+        <a href="index.html" class="me-3">
+        <img src="images/logo.png" alt="Tango Byte Logo" height="50">
+        </a>
+        <h1 class="h4 mb-0">Tango Byte</h1>
+        <nav class="ms-auto">
+        <ul class="nav">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        </nav>
+    </div>
+    </header>
+<!-- Breadcrumbs and Controls -->
+<div class="container mt-4">
+<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Projects</li>
+    </ol>
+</nav>
+<div class="row align-items-center mb-3">
+    <div class="col-md-4">
+    <div class="input-group">
+        <span class="input-group-text"><i class="fas fa-search"></i></span>
+        <input type="text" class="form-control" placeholder="Search projects...">
+    </div>
+    </div>
+    <div class="col-md-6">
+        <!-- Active filter chips -->
+        <!-- 
+        <span class="badge bg-secondary me-1">Unity <i class="fas fa-times ms-1"></i></span>
+        <span class="badge bg-secondary me-1">2024 <i class="fas fa-times ms-1"></i></span> 
+        -->
+        
+    </div>
+        <div class="col-md-2 text-end">
+            <select class="form-select">
+                <option>Most Recent</option>
+                <option>A–Z</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Projects Grid (same as index) -->
+    <section class="col-lg-9">
+        <!-- remove the old placeholder -->
+        <div id="projects-cards" class="row g-4"></div>
+        <!-- pagination... -->
+    </section>
+    <!-- Pagination or infinite scroll -->
+</div>
+
+<!-- Footer -->
+<footer class="bg-light mt-auto py-4">
+    <div class="container text-center">
+    <p class="mb-1">© 2025 Tango Byte. All rights reserved.</p>
+    <p>
+        <a href="#" class="me-3"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="#"><i class="fab fa-github"></i> GitHub</a>
+    </p>
+    </div>
+</footer>
+
+<!-- Scripts same as index.html -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

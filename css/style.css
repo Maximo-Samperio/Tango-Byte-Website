@@ -1,0 +1,115 @@
+    :root {
+        --primary: #2C3E50;
+        --secondary: #E74C3C;
+        --bg: #F4F4F4;
+    }
+    
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: var(--bg);
+        color: var(--primary);
+    }
+    
+    h1, h2, h3, h4, h5 {
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .btn-primary {
+        background-color: var(--secondary);
+        border-color: var(--secondary);
+        height: 40px;
+        padding: 0 1.2em;
+        border-radius: 4px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .btn-primary:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .btn-outline-primary {
+        color: var(--primary);
+        border: 2px solid var(--primary);
+        height: 40px;
+        padding: 0 1.2em;
+        border-radius: 4px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .btn-outline-primary:hover {
+        background-color: var(--primary);
+        color: #fff;
+    }
+
+    .hero .carousel-item img {
+        /* Set a fixed max-height (e.g., 400px) */
+        max-height: 400px;
+        /* Ensure image covers the area without stretching */
+        object-fit: cover;
+        /* Optional: center the image within its container */
+        object-position: center;
+        /* Maintain full width */
+        width: 100%;
+    }
+    
+    .card {
+        border: none;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+    
+    .tech-icon {
+        width: 40px;
+        margin-right: 0.5rem;
+    }
+    
+    .avatar-sm {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Targets the carousel inside your project detail pages */
+#projectCarousel .carousel-item img {
+    /* Set a maximum height (adjust as desired) */
+    max-height: 500px;
+    /* Ensure the image scales correctly */
+    width: 100%;
+    /* Preserve aspect ratio and center-crop if necessary */
+    object-fit: contain;
+    /* Center the image within the carousel slide */
+    margin: 0 auto;
+}
+
+/* Make carousel control icons black */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+filter: invert(1) brightness(0.5);
+}
+
+/* Optional: increase background opacity for better visibility */
+.carousel-control-prev,
+.carousel-control-next {
+background-color: rgba(0, 0, 0, 0);
+}
+
+#projects-cards .project-card .card-img-top {
+/* Fixed height for uniform cards */
+height: 250px;    /* adjust this value as needed */
+/* Make image cover container (cropping excess) */
+object-fit: cover;
+/* Ensure full-width within card */
+width: 100%;
+}
+
+/* If you also use the same cards on index.html, target both containers */
+.project-card .card-img-top {
+height: 250px;
+object-fit: cover;
+width: 100%;
+}
